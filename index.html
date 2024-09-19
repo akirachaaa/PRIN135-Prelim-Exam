@@ -13,7 +13,7 @@
                 <li><a href="#headers">HTML Headers</a></li>
                 <li><a href="#typography">HTML Typography</a></li>
                 <li><a href="#formatting">HTML Formatting</a></li>
-                <li><a href="">HTML Media</a></li>
+                <li><a href="#media">HTML Media</a></li>
                 <li><a href="">HTML Table</a></li>
                 <li><a href="">HTML Forms</a></li>
             </ul>
@@ -218,6 +218,69 @@ and break lines.
                             <td>Superscript Text</td>
                             <td><code>This is &lt;sup&gt;superscripted&lt;/sup&gt; text</code></td>
                             <td>This is <sup>superscripted</sup> text</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <br>
+        <section id="media">
+            <div>
+                <h2 style="display: inline">HTML Media</h2>
+                <h3 style="display: inline"><a href="#top">(top)</a></h3>
+            </div>
+            <br>
+            <div>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th>Markup</th>
+                            <th>Output</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Image</td>
+                            <td><code>
+                                &lt;img src="source.jpg" alt="alternate text"&gt;
+                            </code></td>
+                            <td><img src=" https://picsum.photos/320/240" alt="image"></td>
+                        </tr>
+                        <tr>
+                            <td>Video</td>
+                            <td><code>
+                                &lt;video width="320" height="240" controls&gt;<br>
+                                &nbsp;&lt;source src="source.mp4" type="video/mp4"&gt;<br>
+                                &nbsp;&lt;source src="source.ogg" type="video/ogg"&gt;<br>
+                                &nbsp;Your browser does not support the video tag.<br>
+                                &lt;/video&gt;
+                            </code></td>
+                            <td><video width="320" height="240" controls>
+                                <source src=" https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video></td>
+                        </tr>
+                        <tr>
+                            <td>Audio</td>
+                            <td><code>
+                                &lt;audio&gt; controls<br>
+                                &nbsp;&lt;source src="source.ogg" type="audio/ogg"&gt;<br>
+                                &nbsp;&lt;source src="source.mpeg" type="audio/mpeg"&gt;<br>
+                                &nbsp;Your browser does not support the audio element.<br>
+                                &lt;/audio&gt;
+                            </code></td>
+                            <td><audio controls>
+                                <source src="https://content.codecademy.com/courses/Semantic%20HTML/nyc-sounds.mov" type="audio/mp4">
+                                Your browser does not support the audio element.
+                            </audio></td>
+                        </tr>
+                        <tr>
+                            <td>IFrame</td>
+                            <td><code>
+                                &lt;iframe src="url" alt="alternate text"&gt;&lt;/iframe&gt;
+                            </code></td>
+                            <td><iframe src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGRGfdqqK0&#x2F;a4g7Fq1ZCb-A6DrYhHa-rQ&#x2F;view?embed"></iframe></td>
                         </tr>
                     </tbody>
                 </table>
