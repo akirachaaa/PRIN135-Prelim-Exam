@@ -17,3 +17,16 @@ h1 {
     font-size: 2em;
 }
 
+#top {
+    display: flex;
+    flex-direction: column;
+    flex: 0.3;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffb4b4;
+    position:fixed;
+    width: 15vw;
+    height: 100vh;
+}
+
