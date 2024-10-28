@@ -30,3 +30,23 @@ h1 {
     height: 100vh;
 }
 
+#top li {
+    list-style-type: none;
+    margin: 10px auto;
+}
+
+.btn {
+    text-decoration: none;
+    display: block;
+    transition: 0.5s;
+    padding: 5px;
+    width: 200px;
+    border: 2px solid #cf8a8ae5;
+    background: #f8d1d1;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background-color: #cf8a8ae5;
+    color: #f8d1d1;
+}
