@@ -50,3 +50,13 @@ h1 {
     background-color: #cf8a8ae5;
     color: #f8d1d1;
 }
+
+.git {
+    text-decoration: none;
+    color: #ff4c4c;
+    transition: 0.3s;
+}
+
+.git:hover {
+    color: #c97171e5;
+}
