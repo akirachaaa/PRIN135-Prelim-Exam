@@ -70,3 +70,10 @@ h1 {
     padding-left: 16vw;
     background-color: #ffd3d3;
 }
+
+.container table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    border: 3px solid #cf8a8ae5;
+    width: 100%;
+}
