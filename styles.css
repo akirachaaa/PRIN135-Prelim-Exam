@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    color: #1c1c1c;
+    font-family: "Roboto Slab", serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+h1 {
+    font-size: 2em;
+}
+
