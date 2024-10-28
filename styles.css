@@ -60,3 +60,13 @@ h1 {
 .git:hover {
     color: #c97171e5;
 }
+
+.container{
+    display: flex;
+    flex:auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-left: 16vw;
+    background-color: #ffd3d3;
+}
