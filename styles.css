@@ -5,6 +5,7 @@
     color: #1c1c1c;
     font-family: "Roboto Slab", serif;
     scroll-behavior: smooth;
+    overflow: hidden;
 }
 
 body {
@@ -20,14 +21,12 @@ h1 {
 #top {
     display: flex;
     flex-direction: column;
-    flex: 0.3;
     align-items: center;
     text-align: center;
     padding: 20px;
     background-color: #ffb4b4;
-    position:fixed;
-    width: 15vw;
     height: 100vh;
+    min-width: 20vw;
 }
 
 #top li {
@@ -40,10 +39,10 @@ h1 {
     display: block;
     transition: 0.5s;
     padding: 5px;
-    width: 200px;
-    border: 2px solid #cf8a8ae5;
-    background: #f8d1d1;
+    border-bottom: 2px solid #cf8a8ae5;
     transition: 0.3s;
+    width: 20vw;
+    font-size: 20px;
 }
 
 .btn:hover{
@@ -61,13 +60,18 @@ h1 {
     color: #c97171e5;
 }
 
+.holder{
+    max-height: 100vh;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 .container{
     display: flex;
-    flex:auto;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    padding-left: 16vw;
     background-color: #ffd3d3;
 }
 
@@ -95,4 +99,36 @@ img, video, audio, iframe {
 
 .li-td {
     padding-left: 2vw;
+}
+
+@media (max-width: 600px) {
+    body {
+        display: inline;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    #top {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        background-color: #ffb4b4;
+        position: static;
+        width: 100vw;
+        height: 10vh;
+    }
+    .container{
+        display: flex;
+        flex:auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        background-color: #ffd3d3;
+    }
+    
+}
+
+@media (width: 800px) {
+
 }
