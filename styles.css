@@ -1,32 +1,33 @@
 * {
     margin: 0;
-    padding: 0px;
+    padding: 0;
     box-sizing: border-box;
     color: #1c1c1c;
     font-family: "Roboto Slab", serif;
     scroll-behavior: smooth;
+    overflow: hidden;
 }
 
 body {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
 }
 
 h1 {
     font-size: 2em;
 }
 
+.top{
+    min-width: 20vw;
+}
+
 #top {
     display: flex;
     flex-direction: column;
-    flex: 0.3;
     align-items: center;
     text-align: center;
     padding: 20px;
     background-color: #ffb4b4;
-    position:fixed;
-    width: 15vw;
     height: 100vh;
 }
 
@@ -40,10 +41,10 @@ h1 {
     display: block;
     transition: 0.5s;
     padding: 5px;
-    width: 200px;
-    border: 2px solid #cf8a8ae5;
-    background: #f8d1d1;
+    border-bottom: 2px solid #cf8a8ae5;
     transition: 0.3s;
+    width: 20vw;
+    font-size: 20px;
 }
 
 .btn:hover{
@@ -61,13 +62,18 @@ h1 {
     color: #c97171e5;
 }
 
+.holder{
+    max-height: 100vh;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 .container{
     display: flex;
-    flex:auto;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    padding-left: 16vw;
     background-color: #ffd3d3;
 }
 
@@ -95,4 +101,33 @@ img, video, audio, iframe {
 
 .li-td {
     padding-left: 2vw;
+}
+
+@media (max-width: 425px) {
+    body{
+        flex-direction: column;
+    }
+    .top {
+        width: 100vw;
+        max-height: 30vh;
+        border-bottom: 5px solid #cf8a8ae5;
+        overflow: auto;
+    }
+    #top{
+        height: auto;
+    }
+    .holder{
+        max-height: 70vh;
+    }
+    .btn {
+        width: 100vw;
+    }
+    .container{
+        align-items: start;
+        overflow-x: auto;
+    }
+    .container table {
+        min-width: 200vw;
+        width: auto;
+    }
 }
